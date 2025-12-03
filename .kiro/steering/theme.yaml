@@ -1,0 +1,6 @@
+responses:
+  style:
+    coding_style: "simple, readable, beginner-friendly React with functional components and hooks"
+    ui_theme: "Halloween colors (black background, orange and purple accents)"
+    complexity: "very low"
+    comments: "Add short comments only when necessary to clarify logic."

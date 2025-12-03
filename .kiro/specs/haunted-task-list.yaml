@@ -1,0 +1,35 @@
+name: Haunted Task List
+description: A minimal Halloween-themed to-do list where tasks turn haunted after 10 seconds.
+
+components:
+  - name: App
+    responsibilities:
+      - Render AddTaskForm and TaskList
+      - Manage list of tasks in state
+
+  - name: AddTaskForm
+    responsibilities:
+      - Capture text input for a new task
+      - Notify parent when the user adds a task
+
+  - name: TaskList
+    responsibilities:
+      - Render a list of TaskCard components
+      - Pass createdAt and text props down
+
+  - name: TaskCard
+    props:
+      - id: string
+      - text: string
+      - createdAt: number
+      - onExorcise: function
+    responsibilities:
+      - Display the task text
+      - Decide whether the task is "haunted"
+      - Call onExorcise when the Exorcise button is clicked
+
+behaviors:
+  hauntedState:
+    description: "A task becomes haunted after 10 seconds."
+    condition: "Date.now() - createdAt > 10000"
+    effect: "Add CSS class 'haunted' to the TaskCard container"

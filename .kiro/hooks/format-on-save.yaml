@@ -1,0 +1,4 @@
+trigger: on_save
+description: Run Prettier formatting whenever files are saved.
+actions:
+  - run: "npx prettier --write ."
