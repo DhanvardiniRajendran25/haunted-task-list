@@ -49,6 +49,7 @@ This logic is encapsulated cleanly inside each task component using React hooks.
 ## 🧪 Try It Out
 
 * **Live Demo:**  [https://devpost.com/software/haunted-task-list](https://devpost.com/software/haunted-task-list)
+                 
                   [https://haunted-task-list.vercel.app/](https://haunted-task-list.vercel.app/)
 * **GitHub Repo:** [https://github.com/DhanvardiniRajendran25/haunted-task-list](https://github.com/DhanvardiniRajendran25/haunted-task-list)
 
